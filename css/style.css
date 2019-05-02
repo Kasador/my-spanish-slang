@@ -1,0 +1,520 @@
+body, html {
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  margin: 0;
+  background-color: #f1f1f1; /* white */
+}
+/* Styles for Main Image */
+.main-image {
+  background-image: url("../images/spancity.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.main-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.main-text h1 {
+  margin-top: 10px;
+}
+.main-text p {
+  margin-top: 10px;
+}
+.active {
+  color: #f1f1f1 !important; /* white */
+}
+#button-header {
+  border: solid black 2px;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.0em;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#button-header:hover {
+  background-color: #f1f1f1; /* white */
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#button-header:active {
+  background-color: #818181; /* light gray */
+}
+#button-header:focus {
+  outline: none;
+}
+/* end of main style image */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181; /* light gray */
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1; /* white */
+  transition: 0.3s;
+}
+
+.main {
+  margin-left: 200px;
+  height: 100%;
+}
+#main-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.three {
+  padding: 15px;
+  margin: 15px;
+}
+
+.three h1 {
+  letter-spacing: 0.2em;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.three p {
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  margin-bottom: 25px;
+}
+
+.three a {
+  text-decoration: none;
+  color: #818181; /* light gray */
+}
+.three a:hover {
+  color: #111; /* black */
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+.three hr {
+  width: 100%;
+  box-shadow: 2px 2px 2px;
+  border: solid;
+  margin-bottom: 15px;
+}
+#parallax {
+  background-image: url("../images/world.gif");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* pick a flag */
+.pick-flag h1 {
+  font-size: 4.0em;
+  text-align: center;
+  position: relative;
+  top: -60px;
+  color: #818181; /* light gray */
+  background-color: #111;
+  padding: 15px;
+  width: 500px;
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12), 0 20px 40px rgba(0,0,0,0.24);
+}
+#flags-flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.img-flags {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.img-flags:hover {
+  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12), 0 20px 40px rgba(0,0,0,0.24);
+  transform: scale(1.1);
+}
+.flex-item-flags {
+  width: 400px;
+  height: 250px;
+  margin: 15px;
+  margin-bottom: 70px;
+}
+.flex-item-flags h1 {
+  text-align: center;
+  font-size: 1.7em;
+  margin: 20px;
+}
+.flex-item-flags a {
+  text-decoration: none;
+  color: #818181; /* light gray */
+}
+.flex-item-flags a:hover {
+  color: #111;
+  transition: 0.3s;
+}
+.img-flags {
+  width: 400px;
+  height: 250px;
+}
+footer {
+  padding: 25px;
+  margin-top: 50px;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: #111;
+  color: #818181;
+}
+footer a {
+  text-decoration: none;
+  color: #818181; /* light gray */
+}
+footer a:hover {
+  color: #f1f1f1; /* white */
+  transition: 0.3s;
+}
+
+/* About Me Page -------------------------------------------------------------------- */
+#header-about-text {
+  font-size: 5.0em;
+  text-align: center;
+  padding: 20px;
+  background-color: #FF5858; /* red */
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#header-about-img {
+  display: block;
+  margin: 40px auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12), 0 20px 40px rgba(0,0,0,0.24);
+}
+.about-para {
+  font-size: 2.0em;
+  padding: 50px;
+  letter-spacing: 0.1em;
+  line-height: 1.4em;
+  margin: auto;
+}
+/* CSS for slang page! ------------------------------------------------------ */
+.slang-header {
+  background-image: url("../images/slang-header.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.slang-pais-h1 {
+  font-size: 5.0em;
+  text-align: center;
+  padding: 20px;
+  background-color: #50B1DE; /* ligth blue */
+  color: white;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#colors-bolivia {
+  background-color: #FFE500; /* light yellow */
+  color: #026630; /* green */
+}
+#colors-chile {
+  background-color: #D62C1F; /* red */
+  color: #0038A5; /* blue */
+}
+#colors-colombia {
+  background-color: #FEE800; /* yellow */
+  color: #00168D; /* blue */
+}
+#colors-costarica {
+  background-color:	#CE1127; /* red */
+  color: 	#012B81; /* blue */
+}
+#colors-cuba {
+  background-color:	#002A8E; /* blue */
+  color: 	#D0142C; /* red */
+}
+#colors-spain {
+  background-color:	#C60B1D; /* red */
+  color: #FFC501; /* yellow */
+}
+#colors-guatemala {
+  background-color:	#4897D0; /* lightblue */
+  color: #FFFFFF; /* white */
+}
+#colors-honduras {
+  background-color: #0073CE; /* blue */
+  color: #FFFFFF; /* white */
+}
+#colors-mexico {
+  background-color: #006847; /* green */
+  color: #C80B1F; /* red */
+}
+#colors-nicaragua {
+  background-color: #0181CC; /* blue */
+  color: #FFFFFF; /* white */
+}
+#colors-panama {
+  background-color: #015293; /* blue */
+  color: 	#D21033; /* red */
+}
+#colors-paraguay {
+  background-color:	#D42C1F; /* red */
+  color: #0038A7; /* blue */
+}
+#colors-peru {
+  background-color: #B10918; /* red */
+  color: #E4E4E4; /* white */
+}
+#colors-puertorico {
+  background-color:	#FE0000; /* red */
+  color: #343399; /* blue */
+}
+#colors-dr {
+  background-color:	#012C61; /* blue */
+  color: #CE1127; /* red */
+}
+#colors-uruguay {
+  background-color:	#0038A7; /* blue */
+  color: 	#F0CD25; /* yellow */
+}
+#colors-venezuela {
+  background-color: #FFCC01; /* yellow */
+  color: #D0142C; /* red */
+}
+#colors-ecuador {
+  background-color: #FFDD00; /* yellow */
+  color: #064D9E; /* blue */
+}
+#colors- {
+  background-color:	#1047AE; /* blue */
+  color: #FFFFFF; /* white */
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin: 50px auto;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+th {
+  font-size: 2.0em;
+}
+td {
+  font-size: 1.5em;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+/* sayings page ------------------------------------------------- */
+#header-sayings-text {
+  font-size: 5.0em;
+  text-align: center;
+  padding: 20px;
+  background-color: #FF5858; /* red */
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+/* contact page ------------------------------------------------- */
+#header-contact-text {
+  font-size: 5.0em;
+  text-align: center;
+  padding: 20px;
+  background-color: #FF5858; /* red */
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+form {
+  padding: 50px;
+}
+label {
+  font-size: 3.0em;
+  padding-bottom: 10px;
+}
+textarea {
+  width: 500px;
+  height: 400px;
+  margin-top: 10px;
+}
+input {
+  padding: 10px;
+  margin: 10px;
+}
+#submit-contact {
+  padding: 20px;
+  font-size: 2.0em;
+  margin-top: 10px;
+  border: solid black 2px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#submit-contact:active {
+  outline: none;
+}
+#submit-contact:focus {
+  outline: none;
+}
+#submit-contact:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background-color: #fff;
+  transition: 0.3s;
+}
+/* thanks page */
+#thanks {
+  font-size: 5.0em;
+  padding: 50px;
+  margin-bottom: 700px;
+}
+/* media queries --------------------------------------------------- */
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@media only screen and (max-width: 1025px) {
+  .main {
+      margin: 0;
+  }
+  .sidenav {
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding-bottom: 15px;
+    justify-content: space-around;
+    text-align: center;
+    position: static;
+  }
+}
+@media only screen and (max-width: 925px) {
+  .main-image {
+    display: none;
+  }
+  .sidenav {
+    flex-direction: column;
+  }
+  .sidenav a {
+    font-size: 3.0em;
+    padding: 25px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .pick-flag h1 {
+    font-size: 2.0em;
+    width: 200px;
+    top: -50px;
+  }
+  .flex-item-flags {
+    width: 280px;
+    height: 130px;
+    margin: 15px;
+    margin-bottom: 50px;
+  }
+  .img-flags {
+    width: 280px;
+    height: 130px;
+  }
+  .flex-item-flags h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px;
+  }
+  #parallax {
+    background-image: url("../images/world.gif");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: inherit;
+  }
+}
+@media only screen and (max-width: 761px) {
+  footer {
+    font-size: 1.0em;
+  }
+}
+@media only screen and (max-width: 550px) {
+  footer {
+    font-size: 0.7em;
+  }
+}
+/* Media query for about page */
+@media only screen and (max-width: 850px) {
+  #header-about-img {
+    width: 500px;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .about-para {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #header-about-img {
+    width: 300px;
+    margin-bottom: 0;
+    height: auto;
+  }
+  .about-para {
+    font-size: 1.1em;
+  }
+}
+/* for the slang pages */
+@media only screen and (max-width: 860px) {
+  td {
+    font-size: 1.0em;
+  }
+}
+@media only screen and (max-width: 585px) {
+  td {
+    font-size: 0.8em;
+  }
+  .slang-header {
+    background-image: url("../images/slang-header-mobile.gif");
+  }
+}
+@media only screen and (max-width: 450px) {
+  .slang-pais-h1 {
+    font-size: 3.0em;
+  }
+}
+/* media for contact page */
+@media only screen and (max-width: 580px) {
+  textarea {
+    width: 250px;
+    height: 200px;
+  }
+}
+/* media for thanks page */
+@media only screen and (max-width: 550px) {
+  #thanks {
+    font-size: 2.0em;
+  }
+}
